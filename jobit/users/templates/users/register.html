@@ -1,3 +1,4 @@
+{% extends "feed/base.html" %}
 {% load crispy_forms_tags %}
 {%block content %}
 
@@ -7,7 +8,7 @@
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Join
                 </legend>
-                {{ form }}
+                {{ form|crispy }}
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline-info" type="submit">Sign up </button>
