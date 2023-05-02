@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'crispy_bootstrap4',
+    'django_filters',
+    'bootstrapform',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +135,7 @@ LOGIN_URL = 'login'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+    )

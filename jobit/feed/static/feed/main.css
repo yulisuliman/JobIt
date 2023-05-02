@@ -1,6 +1,5 @@
-
 body {
-  background: #c05200;
+  background: #fafafa;
   color: #333333;
   margin-top: 5rem;
 }
@@ -18,11 +17,11 @@ ul {
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #c05200;
+  color: #cbd5db;
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #c05200;
+  color: #ffffff;
 }
 
 .site-header .navbar-nav .nav-link.active {
@@ -30,9 +29,9 @@ ul {
 }
 
 .content-section {
-  background: #c05200;
+  background: #ffffff;
   padding: 10px 20px;
-  border: 1px solid #c05200;
+  border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
 }
@@ -59,7 +58,7 @@ a.article-title:hover {
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
-  border-bottom: 1px solid #c05200
+  border-bottom: 1px solid #e3e3e3
 }
 
 .article-metadata a:hover {
