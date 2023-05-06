@@ -16,17 +16,16 @@ GENDER_CHOICES = (
     ('O', 'Other'),
 )
 
-
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
-    date_of_birth = models.DateTimeField()
+    date_of_birth = models.DateField(default=date(2000, 1, 1))
     profession = models.CharField(max_length=100, default='')
     address = models.CharField(max_length=50, default='')
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES,  default='0')
 
     def __str__(self):
-        return self.user.username
+        return f'{self.user.username} Profile'
 
     # def save(self, *args, **kwargs):
     #     super(Profile, self).save(*args, **kwargs)
@@ -37,4 +36,3 @@ class Profile(models.Model):
     #         output_size = (300, 300)
     #         img.thumbnail(output_size)
     #         img.save(self.image.path)
-
