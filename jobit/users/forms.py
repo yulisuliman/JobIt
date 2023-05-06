@@ -9,6 +9,7 @@ GENDER_CHOICES = (
     ('O', 'Other'),
 )
 
+
 class UserRegisterForm(UserCreationForm):
     first_name = forms.CharField(max_length=50)
     last_name = forms.CharField(max_length=50)
